@@ -1,0 +1,23 @@
+{
+  "name": "desarrollowebcoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diego30Ch/DesarrolloWebCoder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diego30Ch/DesarrolloWebCoder/issues"
+  },
+  "homepage": "https://github.com/Diego30Ch/DesarrolloWebCoder#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
