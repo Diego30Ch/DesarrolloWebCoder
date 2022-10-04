@@ -25,33 +25,38 @@ body{
     box-sizing: border-box;
 }
 
-
-.horarios {   
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    .dias{
-        font-family: $font-letra-pacifico;
-    }
-
-    h1{
-        font-family: $font-letra-pacifico;
-        font-size: $size-titulo;
-    }
-
-    ul{
-        color: black;
-        text-decoration: none;
-        li{
+.contenedor_horarios {
+    background-color: #fff;
+    height: 100vh;
+    .horarios {   
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+        .dias{
+            font-family: $font-letra-pacifico;
+        }
+    
+        h1{
+            font-family: $font-letra-pacifico;
+            font-size: $size-titulo;
+        }
+    
+        ul{
+            color: black;
             text-decoration: none;
-            a{
-                font-size: $size-item;
+            li{
+                text-decoration: none;
+                a{
+                    font-size: $size-item;
+                }
+              
             }
-          
         }
     }
 }
+
+
 
 .contenedor_nosotros{
     background-image: $fondo-nosotros;
