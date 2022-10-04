@@ -1,479 +1,270 @@
-    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&display=swap" rel="stylesheet');
-    @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Rubik+Dirt&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Rubik+Dirt&display=swap" rel="stylesheet');
+/*Nosotros*/
+body {
+  background-image: url("../imagenes/foto-fuego2.jpg");
+  background-repeat: repeat;
+  background-position: 100%;
+  position: relative; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-    
+.horarios {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .horarios .dias {
+    font-family: "Pacifico", cursive; }
+  .horarios h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 2.3em; }
+  .horarios ul {
+    color: black;
+    text-decoration: none; }
+    .horarios ul li {
+      text-decoration: none; }
+      .horarios ul li a {
+        font-size: 1.3em; }
 
-    body{ 
-        background-image:url('../imagenes/foto-fuego2.jpg');
-        background-color: rgb(255, 255, 17);
-        background-repeat: repeat;
-        background-position: 100%;   
-        position: relative;
-    }
+.contenedor_nosotros {
+  background-image: url("../imagenes/fondo4.png");
+  height: 100vh; }
+  .contenedor_nosotros .row .col-md-5 {
+    padding: 4%; }
+    .contenedor_nosotros .row .col-md-5 h2 {
+      font-family: "Libre Baskerville", serif;
+      color: white;
+      font-size: 50px;
+      background-position: center;
+      display: flex;
+      text-shadow: black 0.1em 0.1em 0.2em; }
+    .contenedor_nosotros .row .col-md-5 p {
+      color: white;
+      font-size: 15px;
+      background-position: center;
+      display: flex;
+      text-shadow: black 0.1em 0.1em 0.2em; }
 
+.btn-wsp-f {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100; }
 
-    *{
-        margin: 0;
-        padding: 0;  
-        box-sizing: border-box;
-    }
+.btn-wsp-f:hover {
+  text-decoration: none;
+  color: #0df053;
+  background-color: #fff; }
 
+.contenedor_menu {
+  background-image: url("../imagenes/fondo6.png"); }
 
-    .caja1 h1 {
-        font-family: 'Pacifico', cursive;
-        color: white;
-        font-size: 100px;
-        background-position: center;
-        margin: 20px 300px;
-        display: flex;
-        text-shadow: black 0.1em 0.1em 0.2em;
-    }
+/*contacto*/
+.contenedor_contacto {
+  background-color: #fff;
+  height: 100vh; }
+  .contenedor_contacto .contactos a {
+    font-family: 'Libre Baskerville', serif;
+    margin: 10px 0;
+    text-decoration: none; }
 
-    .sobre {
-        list-style-position:outside;
-    }
+.btn-facebook {
+  line-height: 55px;
+  bottom: 170px;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 55px;
+  color: #3e16b6;
+  font-size: 40px;
+  z-index: 100; }
 
-    .cont-button{
-        display: flex;
-        text-align: center;
-        align-items: center;    
-        max-width: 100%;
-    }
+.btn-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  /* change this to change the size*/ }
 
+.item-icono-telefono {
+  color: violet;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  display: flex; }
 
-    .button {
-        
-        background-color:  rgb(12, 9, 2);
-        padding: 20px;  
-        padding-bottom: 25px;
-        border-radius: 35px;
-        margin: 0 500px ;
-        height: auto;
-        margin-bottom: 20px;
-        font-size: 15px;      
-        border-width: 2px;
-        box-shadow:  black 0.1em 0.1em 0.2em;
-        border-color: #EB9532;
-        transition: background 0.2s ease-in-out;
-        background-position: 100%;
-        background-size: 400%;
-        background-image: linear-gradient(45deg, #EB9532 50%, transparent 50%);
-        position: static;
-        line-height: 55px;
-        bottom: 30px;
-        right: 30px;
-    }  
+.btn-wsp {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  bottom: 170px;
+  display: flex;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100; }
 
-    .button a { 
-        font-family: 'Rubik Dirt', cursive;
-        text-decoration: none;
-        color: rgb(237, 248, 248);
-    }
+.otroestilo {
+  font-size: 20px;
+  color: black;
+  text-decoration: none; }
 
-    .button:hover{
-        background-position: 0;
-    }
-        
+#ubi-description {
+  padding: 5%; }
 
-    .caja {
-        font-family: 'Libre Baskerville', serif;
-        margin: 15px;
-        display: flex;
-        padding: 3%;
-    }
+/* Index*/
+.contenedor-button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  max-width: 100%; }
+  .contenedor-button .button {
+    background-color: #0c0902;
+    padding: 20px;
+    padding-bottom: 25px;
+    border-radius: 35px;
+    margin: 0 500px;
+    height: auto;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-width: 2px;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    border-color: #EB9532;
+    transition: background 0.2s ease-in-out;
+    background-position: 100%;
+    background-size: 400%;
+    background-image: linear-gradient(45deg, #EB9532 50%, transparent 50%);
+    position: static;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px; }
+    .contenedor-button .button a {
+      font-family: 'Rubik Dirt', cursive;
+      text-decoration: none;
+      color: #edf8f8; }
+  .contenedor-button .button:hover {
+    background-position: 0; }
 
-    .caja1 {
-        text-align: center;
-        display: flex;
-    }
-
-    .caja3 {
-
-        padding: 30px;
-        font-family: 'Libre Baskerville', serif;
-        color: aliceblue;
-    }
-
-
-    .caja5 {
-        font-family: 'Libre Baskerville', serif;
-        color: aliceblue;
-        margin: 15px;
-        display: flex;
-        border-radius: 6px;
-        flex-direction: column;
-        background-color:  rgb(12, 12, 11);
-        padding: 2%;
-        margin-left: 5%;
-        width: 100%;
-        
-    }
-
-    .caja2 { 
-        font-family: 'Libre Baskerville', serif;
-        display: flex;
-        background-color:  rgb(249, 245, 241);
-        background-size: 100px; 
-        padding: 30px;
-        gap: 7px;
-    }
-
-    .imagen3 {
-        width: 700px;
-        height: 300px;
-        border-radius: 6px;
-    
-
-    }
-
-    .img-fuego {
-        width: 500px;
-        height: 300px;
-        border-radius: 6px;
-
-
-    }
-    .contenedor_descripcion h3{
-        font-size: 30px;
-        color: rgb(203, 118, 13);
-        text-shadow: black 0.1em 0.1em 0.2em;
-    }
-
-    .contenedor_descripcion p {
-        font-size: large;
-        color: beige;
-        text-shadow: black 0.1em 0.1em 0.2em;
-    }
-
-    .contenedor_descripcion {
-        padding-left: 4%;
-    }
-
-    .contenedor_descripcion_sabores h4{
-        font-size: 30px;
-        color: rgb(12, 12, 12);
-        text-shadow: black 0.1em 0.1em 0.2em;  
-    }
-
-    .contenedor_descripcion_sabores {
-        padding-left: 2%;
-        padding-right: 4%;
-    }
-
-
-    .container-galeria{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 8px;
-        transition: all 300ms;
-    }
-
-    .item-galeria {
-        position: relative;  
-        justify-content: center;
-    }
-
-
-
-    .item-galeria .img-galeria {
-        border-radius: 16px;
-        width: 350px;
-        height: 350px;
-        padding: 1%;
-        box-shadow: 3px 5px 5px  rgba (3,32,57,.8);
-        object-fit: cover;
-        overflow: hidden;
-    
-    }
-
-    .img-rest {
-        width: 500px;
-        height: 300px;
-        border-radius: 6px;
-        margin-left: 1%;
-        margin-right: 1%;
-        transition: all 300ms;
-        box-shadow: 3px 5px 5px  rgba (3,32,57,.8);
-        
-    }
-
-    .item-galeria .content{
-        position: absolute;
-        top: 50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        transition: .5;  
-    }
-
-    .content h2, a {
+.contenedor-galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  transition: all 300ms; }
+  .contenedor-galeria .item-galeria {
+    position: relative;
+    justify-content: center; }
+    .contenedor-galeria .item-galeria .img-galeria {
+      border-radius: 16px;
+      width: 350px;
+      height: 350px;
+      padding: 1%;
+      box-shadow: 3px 5px 5px rgba 3, 32, 57, 0.8;
+      object-fit: cover;
+      overflow: hidden; }
+    .contenedor-galeria .item-galeria .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: .5; }
+      .contenedor-galeria .item-galeria .content h2 {
         font-family: 'Libre Baskerville', serif;
         color: white;
         text-decoration: none;
         margin: 10px 0;
-    }
-
-    .content h2 {
-        font-size: 2.5rem;
-    }
-
-    .content a {
-        margin-left: 15%;
-        font-size: large;
-    }
-
-
-    .content a{
-        opacity: 0;
-    }
-
-    .item-galeria:hover {
-        flex:70%;
-        transition: .5s;
-    }
-
-    .item-galeria:hover > .img-galeria {
-        width: 100%;
-        background: rgba(0, 0, 0, -4);
-
-    }
-
-    .item-galeria:hover > .content a {
-        opacity: 1;
-        transition: .5s;
-    }
-
-    /*Nosotros*/
-
-    .contenedor_nosotros{
-        background-image:url('../imagenes/fondo4.png');
-        height: 100vh;
-        
-    }
-
-    .contenedor_nosotros .row .col-md-5 {
-        padding: 4%;
-    }
-
-    .contenedor_nosotros .row .col-md-5{
-        padding: 4%;
-    }
-
-    .contenedor_nosotros .row .col-md-5 h2{
+        font-size: 2.5rem; }
+      .contenedor-galeria .item-galeria .content a {
         font-family: 'Libre Baskerville', serif;
         color: white;
-        font-size: 50px;
-        background-position: center;
-        display: flex;
-        text-shadow: black 0.1em 0.1em 0.2em;
-    }
+        margin-left: 15%;
+        font-size: large;
+        opacity: 0;
+        text-decoration: none; }
+  .contenedor-galeria .item-galeria:hover {
+    flex: 70%;
+    transition: .5s; }
+  .contenedor-galeria .item-galeria:hover > .img-galeria {
+    width: 100%;
+    background: rgba(0, 0, 0, 0); }
+  .contenedor-galeria .item-galeria:hover > .content a {
+    opacity: 1;
+    transition: .5s; }
 
-    .contenedor_nosotros .row .col-md-5 p{
-    
-        color: white;
-        font-size: 15px;
-        background-position: center;
-        display: flex;
-        text-shadow: black 0.1em 0.1em 0.2em;
-    }
+.titulo {
+  text-align: center;
+  display: flex; }
+  .titulo h1 {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 100px;
+    background-position: center;
+    margin: 20px 300px;
+    display: flex;
+    text-shadow: black 0.1em 0.1em 0.2em; }
 
-    #carouselExampleControls {
-        padding: 2%;
-    }
+.contenedor_descripcion {
+  font-family: 'Libre Baskerville', serif;
+  margin: 15px;
+  display: flex;
+  padding: 3%; }
+  .contenedor_descripcion h3 {
+    font-size: 30px;
+    color: #cb760d;
+    text-shadow: black 0.1em 0.1em 0.2em; }
+  .contenedor_descripcion p {
+    font-size: large;
+    color: beige;
+    text-shadow: black 0.1em 0.1em 0.2em; }
 
+.contenedor_sabores {
+  font-family: 'Libre Baskerville', serif;
+  display: flex;
+  background-color: #f9f5f1;
+  background-size: 100px;
+  padding: 30px;
+  gap: 7px; }
+  .contenedor_sabores .contenedor_descripcion_sabores {
+    padding-left: 2%;
+    padding-right: 4%; }
+    .contenedor_sabores .contenedor_descripcion_sabores h4 {
+      font-size: 30px;
+      color: #0c0c0c;
+      text-shadow: black 0.1em 0.1em 0.2em; }
+  .contenedor_sabores .img-amasar {
+    width: 700px;
+    height: 300px;
+    border-radius: 6px; }
+  .contenedor_sabores .img-fuego {
+    width: 500px;
+    height: 300px;
+    border-radius: 6px; }
 
-    .carrousel-item{
-        height: 65vh;
-        min-height: 300px;
-        background: no-repeat center center scroll;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-
-    }
-
-   
-    .btn-wsp{
-        
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        bottom: 170px;         
-        display: flex; 
-        background: #0df053;
-        color: #fff;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 40px;
-        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-        z-index: 100;
-
-    }
-
-    .btn-wsp-f{
-        position: fixed;
-        width: 55px;
-        height: 55px;
-        line-height: 55px;
-        bottom: 30px;
-        right: 30px;
-        background: #0df053;
-        color: #fff;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-        z-index: 100;
-    }
-
-    .btn-wsp-f:hover{
-        text-decoration: none;
-        color: #0df053;
-        background-color: #fff;
-    }
-
-    .btn-facebook{
-           
-        line-height: 55px;
-        bottom: 170px;      
-        text-align: center;
-        border-radius: 10px;
-        line-height: 55px;  
-        color: rgb(62, 22, 182);
-        font-size: 40px;
-        z-index: 100;
-    }
-
-
-    .item-icono-telefono{
-        color: violet;
-        text-align: center;
-        font-size: 30px;
-        border-radius: 10px;
-        display:flex;
-    }
-
-    #ubi-description {
-        padding: 5%;
-    }
-
-
-    .otroestilo{
-        font-size: 20px;
-        color:black;
-    }
-
-    .btn-instagram{
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-        -webkit-background-clip: text;
-        /* Also define standard property for compatibility */
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 40px; /* change this to change the size*/
-    }
-
-    .contenedor_menu{
-        background-image:url('../imagenes/fondo6.png');              
-    }
-
-    .titulo_menu{       
-        font-family: 'Rubik Dirt', cursive;
-        position: absolute;
-        color: #fff;
-        font-size: 20px;
-    }
-
-    .button {
-        
-        background-color:  rgb(12, 9, 2);
-        padding: 20px;  
-        padding-bottom: 25px;
-        border-radius: 35px;
-        margin: 0 500px ;
-        height: auto;
-        margin-bottom: 20px;
-        font-size: 15px;      
-        border-width: 2px;
-        box-shadow:  black 0.1em 0.1em 0.2em;
-        border-color: #EB9532;
-        transition: background 0.2s ease-in-out;
-        background-position: 100%;
-        background-size: 400%;
-        background-image: linear-gradient(45deg, #EB9532 50%, transparent 50%);
-        position: static;
-        line-height: 55px;
-        bottom: 30px;
-        right: 30px;
-    }  
-    
-   .contacto-ubicacion{
-
-    font-family: 'Libre Baskerville', serif;
-        color: aliceblue;
-        display: flex;
-        border-radius: 6px;
-        flex-direction: column;
-        background-color:  rgb(12, 12, 11);
-        padding: 2%;
-        margin-left: 35%;
-        margin-bottom: 85%;
-        width: 50%;
-        
-   }
-   
-
-    .contenedor_contacto{
-        background-color: #fff;
-        height: 100vh;
-    }
-
-
-    @media screen and (max-width:768px )   {
-    
-        .caja1 H1 {   
-            margin-left:40%;
-            margin-top: 0px;
-            margin-bottom: 0px;      
-            padding: 0%;        
-            font-size: 50px;       
-        }
-
-        .container-galeria{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 8px;
-            transition: all 300ms;
-        }
-
-
-        .caja1{
-            justify-content: center;
-        }
-
-    
-
-        .caja .contenedor_descripcion{
-            margin-left: 20px;
-        
-        }
-
-    
-        .button {  
-            margin: 0 200px ;     
-        }  
-        
-        .caja2{
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
-            gap: 8px;
-            transition: all 300ms;
-        }
-
-        
-        
-    }
-
+.contenedor_mapa {
+  font-family: 'Libre Baskerville', serif;
+  color: aliceblue;
+  margin: 15px;
+  display: flex;
+  border-radius: 6px;
+  flex-direction: column;
+  background-color: #0c0c0b;
+  padding: 2%;
+  margin-left: 5%;
+  width: 100%; }

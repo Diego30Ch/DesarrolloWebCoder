@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Página con los horarios de atencion de la pizzería">
+    <title>Horarios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>    
 
+    <div class="contenedor_horarios">
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Solana</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNAv" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,19 +38,36 @@
             </li>
             </ul>
         </div>
-        </div>
     </nav> 
-   <h1>horarios</h1> 
-
-<ol>
     
-<ul>lunes</ul>
-<ul>miercoles</ul>
-<ul>jueves</ul>
-<ul>viernes</ul>
-<ul>sabado</ul>
-<ul>domingo</ul>
-<ul>de  18hs a 00hs</ul>
-</ol>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagenes/barra.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/logo2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/faro.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+
+    <div class="horarios"> 
+        <h1>Horarios</h1>
+        <div class="dias">   
+        <ul><li><a>lunes</a></li>
+            <li><a>martes</a></li>
+            <li><a>miercoles</a></li>
+            <li><a>jueves</a></li>
+            <li><a>viernes</a></li>
+            <li><a>de  18hs a 00hs</a></li>
+        </ul>
+        </div>  
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>    
 </body>
 </html>
