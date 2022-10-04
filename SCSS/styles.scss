@@ -360,8 +360,46 @@ body{
     
 }   
 
+@media screen and (max-width:768px )   {
+    
+    .titulo {
+
+        justify-content: center;
+    
+        h1{   
+            margin-left:40%;
+            margin-top: 0px;
+            margin-bottom: 0px;      
+            padding: 0%;        
+            font-size: 50px;}       
+    }
+
+    .contenedor-galeria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 8px;
+        transition: all 300ms;
+    }
 
 
 
+    .contenedor_descripcion{
+        margin-left: 20px;
+    
+    }
 
-/////////////////
+
+    .button {  
+        margin: 0 200px ;     
+    }  
+    
+    .contenedor_sabores{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 8px;
+        transition: all 300ms;
+    }
+
+    
+    
+}
