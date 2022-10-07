@@ -117,7 +117,7 @@ body{
     background-color: #fff;
     height: 100vh;
     .contactos a{
-        font-family: 'Libre Baskerville', serif;
+        font-family: $font-letra-titulos;
         margin: 10px 0;    
         text-decoration: none;
     }
@@ -179,7 +179,7 @@ body{
 
 /* Index*/
 
-.{
+.contenedor-button{
     display: flex;
     text-align: center;
     align-items: center;    
@@ -246,7 +246,7 @@ body{
             transition: .5;  
 
             h2{
-                font-family: 'Libre Baskerville', serif;
+                font-family: $font-letra-titulos;
                 color: white;
                 text-decoration: none;
                 margin: 10px 0;
@@ -254,7 +254,7 @@ body{
             }
 
             a{
-                font-family: 'Libre Baskerville', serif;
+                font-family: $font-letra-titulos;
                 color: white;
                 margin-left: 15%;
                 font-size: large;
@@ -286,7 +286,7 @@ body{
     display: flex;
 
     h1 {
-        font-family: 'Pacifico', cursive;
+        font-family:  $font-letra-pacifico;
         color: white;
         font-size: 100px;
         background-position: center;
@@ -353,6 +353,8 @@ body{
     display: flex;
     border-radius: 6px;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
     background-color:  rgb(12, 12, 11);
     padding: 2%;
     margin-left: 5%;
@@ -382,16 +384,18 @@ body{
     }
 
 
-
     .contenedor_descripcion{
         margin-left: 20px;
     
     }
 
+    .contenedor-button{
+        .button {  
+            margin: 0 200px ;     
+        } 
 
-    .button {  
-        margin: 0 200px ;     
-    }  
+    }
+   
     
     .contenedor_sabores{
         display: grid;

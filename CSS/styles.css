@@ -81,7 +81,7 @@ body {
   background-color: #fff;
   height: 100vh; }
   .contenedor_contacto .contactos a {
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     margin: 10px 0;
     text-decoration: none; }
 
@@ -189,13 +189,13 @@ body {
       transform: translate(-50%, -50%);
       transition: .5; }
       .contenedor-galeria .item-galeria .content h2 {
-        font-family: 'Libre Baskerville', serif;
+        font-family: "Libre Baskerville", serif;
         color: white;
         text-decoration: none;
         margin: 10px 0;
         font-size: 2.5rem; }
       .contenedor-galeria .item-galeria .content a {
-        font-family: 'Libre Baskerville', serif;
+        font-family: "Libre Baskerville", serif;
         color: white;
         margin-left: 15%;
         font-size: large;
@@ -215,7 +215,7 @@ body {
   text-align: center;
   display: flex; }
   .titulo h1 {
-    font-family: 'Pacifico', cursive;
+    font-family: "Pacifico", cursive;
     color: white;
     font-size: 100px;
     background-position: center;
@@ -267,6 +267,8 @@ body {
   display: flex;
   border-radius: 6px;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
   background-color: #0c0c0b;
   padding: 2%;
   margin-left: 5%;
@@ -288,7 +290,7 @@ body {
     transition: all 300ms; }
   .contenedor_descripcion {
     margin-left: 20px; }
-  .button {
+  .contenedor-button .button {
     margin: 0 200px; }
   .contenedor_sabores {
     display: grid;
