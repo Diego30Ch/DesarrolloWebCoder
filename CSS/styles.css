@@ -160,7 +160,7 @@ body {
     bottom: 30px;
     right: 30px; }
     .contenedor-button .button a {
-      font-family: 'Rubik Dirt', cursive;
+      font-family: "Rubik Dirt", cursive;
       text-decoration: none;
       color: #edf8f8; }
   .contenedor-button .button:hover {
@@ -211,6 +211,10 @@ body {
     opacity: 1;
     transition: .5s; }
 
+.navbar .navbar-brand {
+  padding-left: 8%;
+  background: url("../img/logo.png") no-repeat; }
+
 .titulo {
   text-align: center;
   display: flex; }
@@ -224,7 +228,7 @@ body {
     text-shadow: black 0.1em 0.1em 0.2em; }
 
 .contenedor_descripcion {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   margin: 15px;
   display: flex;
   padding: 3%; }
@@ -238,7 +242,7 @@ body {
     text-shadow: black 0.1em 0.1em 0.2em; }
 
 .contenedor_sabores {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   display: flex;
   background-color: #f9f5f1;
   background-size: 100px;
@@ -261,18 +265,19 @@ body {
     border-radius: 6px; }
 
 .contenedor_mapa {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   color: aliceblue;
-  margin: 15px;
+  margin: 10px;
   display: flex;
   border-radius: 6px;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-color: #0c0c0b;
-  padding: 2%;
-  margin-left: 5%;
-  width: 100%; }
+  padding: 1%;
+  margin-left: 5%; }
+  .contenedor_mapa .mapa {
+    width: 600px;
+    height: 450px; }
 
 @media screen and (max-width: 768px) {
   .titulo {
@@ -285,9 +290,13 @@ body {
       font-size: 50px; }
   .contenedor-galeria {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
     transition: all 300ms; }
+    .contenedor-galeria .item-galeria .img-galeria {
+      width: 280px;
+      height: 280px; }
   .contenedor_descripcion {
     margin-left: 20px; }
   .contenedor-button .button {
@@ -296,4 +305,71 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 8px;
-    transition: all 300ms; } }
+    transition: all 300ms; }
+    .contenedor_sabores .contenedor_descripcion_sabores {
+      justify-content: center;
+      align-items: center;
+      padding-left: 10%; }
+  .contenedor_mapa .mapa {
+    width: 400px;
+    height: 450px; }
+  .contenedor_sabores {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    justify-content: center; }
+    .contenedor_sabores .img-amasar {
+      width: 600px;
+      height: min-content;
+      margin-left: 10%; }
+    .contenedor_sabores .img-fuego {
+      width: 380px;
+      height: min-content;
+      margin-left: 10%; }
+    .contenedor_sabores .contenedor_descripcion_sabores {
+      justify-content: center;
+      align-items: center; } }
+
+@media screen and (max-width: 480px) {
+  .titulo {
+    justify-content: center;
+    align-items: center; }
+    .titulo h1 {
+      margin-left: 55%;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 0%;
+      font-size: 30px; }
+  .contenedor-galeria {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    transition: all 300ms; }
+    .contenedor-galeria .item-galeria .img-galeria {
+      width: 230px;
+      height: 230px; }
+  .contenedor_descripcion {
+    margin-left: 20px; }
+  .contenedor-button .button {
+    flex-direction: row;
+    margin: 0 100px;
+    font-size: 5px;
+    padding: 2%; }
+  .contenedor_sabores {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    justify-content: center; }
+    .contenedor_sabores .img-amasar {
+      width: 400px;
+      height: min-content; }
+    .contenedor_sabores .img-fuego {
+      width: 380px;
+      height: min-content; }
+    .contenedor_sabores .contenedor_descripcion_sabores {
+      justify-content: center;
+      align-items: center; }
+  .contenedor_mapa .mapa {
+    width: 400px;
+    height: 450px; } }

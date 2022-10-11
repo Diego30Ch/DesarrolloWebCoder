@@ -7,6 +7,7 @@
 
 $size-item: 1.3em;
 $font-letra-pacifico: 'Pacifico', cursive;
+$font-letra-rubik: 'Rubik Dirt', cursive;
 $font-letra-titulos: 'Libre Baskerville', serif;
 $size-titulo: 2.3em;
 $text-sombra:  black 0.1em 0.1em 0.2em;
@@ -207,7 +208,7 @@ body{
         right: 30px;
 
         a{ 
-            font-family: 'Rubik Dirt', cursive;
+            font-family: $font-letra-rubik;
             text-decoration: none;
             color: rgb(237, 248, 248);
         }
@@ -281,6 +282,11 @@ body{
     }
 }
 
+.navbar .navbar-brand{
+    padding-left: 8%;
+    background: url("../img/logo.png") no-repeat;
+  }
+
 .titulo {
     text-align: center;
     display: flex;
@@ -297,7 +303,7 @@ body{
 }
 
 .contenedor_descripcion {
-        font-family: 'Libre Baskerville', serif;
+        font-family: $font-letra-titulos;
         margin: 15px;
         display: flex;
         padding: 3%;
@@ -317,7 +323,7 @@ body{
    
 
 .contenedor_sabores { 
-    font-family: 'Libre Baskerville', serif;
+    font-family: $font-letra-titulos;
     display: flex;
     background-color:  rgb(249, 245, 241);
     background-size: 100px; 
@@ -347,18 +353,20 @@ body{
 }
 
 .contenedor_mapa {
-    font-family: 'Libre Baskerville', serif;
+    font-family: $font-letra-titulos;
     color: aliceblue;
-    margin: 15px;
+    margin: 10px;
     display: flex;
     border-radius: 6px;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color:  rgb(12, 12, 11);
-    padding: 2%;
+    padding: 1%;
     margin-left: 5%;
-    width: 100%;
+        .mapa{
+            width: 600px; 
+            height: 450px; 
+        }
     
 }   
 
@@ -378,9 +386,17 @@ body{
 
     .contenedor-galeria{
         display: grid;
+        justify-items: center;
         grid-template-columns: repeat(2,1fr);
         gap: 8px;
         transition: all 300ms;
+        .item-galeria{
+            .img-galeria{
+                width: 280px;
+                height: 280px;
+
+            }
+        }
     }
 
 
@@ -402,8 +418,131 @@ body{
         grid-template-columns: repeat(1,1fr);
         gap: 8px;
         transition: all 300ms;
+
+        
+        .contenedor_descripcion_sabores {
+            justify-content: center;
+            align-items: center;
+            padding-left: 10%;
+          
+        }
     }
 
+
+    .contenedor_mapa {
+            .mapa{
+                width: 400px; 
+                height: 450px; 
+            }       
+    } 
+
+    .contenedor_sabores{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+  
+        justify-content: center;
+
+        .img-amasar{
+            width: 600px;
+            height: min-content;
+            margin-left: 10%;
+            
+        }
+
+        .img-fuego{
+            width: 380px;
+            height: min-content;
+            margin-left: 10%;
+        }
+
+        .contenedor_descripcion_sabores {
+            justify-content: center;
+            align-items: center;
+          
+        }
+    }
+        
+}
+
+
+@media screen and (max-width:480px )   {
     
+    .titulo {
+
+        justify-content: center;
+        align-items: center;
     
+        h1{   
+            margin-left:55%;
+            margin-top: 0px;
+            margin-bottom: 0px;      
+            padding: 0%;        
+            font-size: 30px;}       
+    }
+
+    .contenedor-galeria{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2,1fr);
+        gap: 8px;
+        transition: all 300ms;
+        .item-galeria{
+            .img-galeria{
+                width: 230px;
+                height: 230px;
+
+            }
+        }
+    }
+
+
+    .contenedor_descripcion{
+        margin-left: 20px;
+    
+    }
+
+    .contenedor-button{
+        .button {  
+            flex-direction: row;   
+            margin: 0 100px;
+            font-size: 5px;
+            padding:2%;
+        } 
+
+    }
+   
+    
+    .contenedor_sabores{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+  
+        justify-content: center;
+
+        .img-amasar{
+            width: 400px;
+            height: min-content;
+            
+        }
+
+        .img-fuego{
+            width: 380px;
+            height: min-content;
+        }
+
+        .contenedor_descripcion_sabores {
+            justify-content: center;
+            align-items: center;
+          
+        }
+    }
+
+    .contenedor_mapa {
+        .mapa{
+            width: 400px; 
+            height: 450px; 
+        }       
+    } 
+   
 }
